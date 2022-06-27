@@ -42,7 +42,6 @@ p{
   font-size: 20px;
   width: 300px;
   text-align:center;
-  margin-bottom:10%;
   margin-left: 14%;
   display:block;
 }
@@ -76,6 +75,7 @@ input{
 
 }
 #playVSComp{
+    margin-top:5%;
     padding: 1%;
     margin-bottom: 5%;
     background-color:#3e5c76;
@@ -110,7 +110,17 @@ input{
     text-align:center;
     align-content: center;
 }
+#comp{
+    margin-bottom:5%;
+    border: 1px solid white;
+    height:60px;
+    width:450px;
+    font-size:50px;
+    padding-top: 1%;
+    color: #eff7f6;
 
+    display:none; 
+}
 #draw{
     margin-top: 5%;
     margin-bottom:5%;

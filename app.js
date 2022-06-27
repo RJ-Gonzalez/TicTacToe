@@ -119,7 +119,7 @@ player1.addEventListener('keypress',(event)=>{
         divPlayer1.innerHTML ='Player ❌ : ' + player1.value
         divPlayer1.style.color = "white";
         divPlayer1.style.fontSize = "40px";
-        divPlayer1.style.border = "5px solid white";
+        divPlayer1.style.border = "2px solid white";
     }
 })
 player2.addEventListener('keypress',(event)=>{
@@ -129,7 +129,7 @@ player2.addEventListener('keypress',(event)=>{
         divPlayer2.innerHTML ='Player 🔵 : ' + player2.value
         divPlayer2.style.color = "white";
         divPlayer2.style.fontSize = "40px";
-        divPlayer2.style.border = "5px solid white";
+        divPlayer2.style.border = "2px solid white";
     }
 })
 
@@ -139,7 +139,12 @@ player2.addEventListener('keypress',(event)=>{
 playVSComp.addEventListener("click", (clickEvent) => {
     console.log("click")
     player2.classList.toggle('hidden') // made hidden class in CSS to be able to toggle in just comp vs player.
-    computer.style.innerHTML = "Computer"
-    computer.style.color = "white"
+    let comp = document.getElementById("comp")
+    if(comp.style.display = 'none'){ // letting syste know if they read none on css
+        comp.innerHTML = "Player 🔵 : Computer"
+        comp.style.display ='block'
+        comp.style.fontSize = "40px"
+    }
 })
+
 
