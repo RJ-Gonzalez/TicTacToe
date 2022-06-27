@@ -75,17 +75,16 @@ input{
 
 }
 #playVSComp{
-    margin-top:5%;
-    padding: 1%;
-    margin-bottom: 5%;
+    margin-top: 1em;
+    padding: 2%;
     background-color:#3e5c76;
     color:white;
-    font-size: 15px;
+    font-size: 25px;
     cursor:pointer;
     border-radius: 8px;
     box-shadow: 0 0.5em 0.5em -0.4em #bee9e8;
-    /* display:none; will hide restart button until player wins/looses */
 }
+
 .hidden{
     display:none;
     opacity: 0;

@@ -130,6 +130,7 @@ player2.addEventListener('keypress',(event)=>{
         divPlayer2.style.color = "white";
         divPlayer2.style.fontSize = "40px";
         divPlayer2.style.border = "2px solid white";
+        playVSComp.classList.toggle('hidden')
     }
 })
 
@@ -144,6 +145,7 @@ playVSComp.addEventListener("click", (clickEvent) => {
         comp.innerHTML = "Player 🔵 : Computer"
         comp.style.display ='block'
         comp.style.fontSize = "40px"
+        playVSComp.classList.toggle('hidden')
     }
 })
 
