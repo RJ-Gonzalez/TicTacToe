@@ -14,7 +14,7 @@ button.forEach((element) =>{
     element.addEventListener("click", (clickEvent) => {  
         //disables button push until name is entered
         if(!player1Name || !player2Name){ 
-            element.disabled()
+            disabled()
         }
         //starts X and swaps with O w not double click
         if (turnX){  
@@ -136,12 +136,10 @@ player2.addEventListener('keypress',(event)=>{
 
 
 //playing vs computer
-// const playVSComp = document.getElementById = ("playVSComp")
+playVSComp.addEventListener("click", (clickEvent) => {
+    console.log("click")
+    player2.classList.toggle('hidden') // made hidden class in CSS to be able to toggle in just comp vs player.
+    computer.style.innerHTML = "Computer"
+    computer.style.color = "white"
+})
 
-// playVSComp.addEventListener("click", () => {
-//     console.log("click")
-//     let player2title = document.getElementById("player2")
-//     if(player2title.style.display = 'block'){
-//         player2title.style.visibility = 'hidden'
-//     }
-// })
